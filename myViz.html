@@ -43,6 +43,16 @@
       .append("g")
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
+
+svg.append("text")
+      .attr("x", width / 2)
+      .attr("y", -margin.top / 2)
+      .attr("text-anchor", "middle")
+      .style("font-size", "16px")
+      .style("font-weight", "bold")
+      .text("Halloween Spending Over the Years");
+
+    
     // X axis: scale and draw (assuming total values can go up to 10 for example)
     var x = d3.scaleLinear()
         .domain([0, 10]) // Adjust based on data max
