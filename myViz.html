@@ -25,7 +25,7 @@
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
     // Load data from CSV file
-    d3.csv("spending_totals.csv", function(data) {
+    d3.csv("https://msudenver.sharepoint.com/:x:/r/sites/DataViz_CS39AE_Fall24/Shared%20Documents/General/spending_totals.csv?d=waa021fe51bac480c8b70f39840591e83&csf=1&web=1&e=K7PeSH", function(data) {
       // X axis: scale and draw
       var x = d3.scaleLinear()
           .domain([0, 1000]) // Set to maximum value or use d3.max to calculate
